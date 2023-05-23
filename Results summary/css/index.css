@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Grotesk;
+  src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100svh;
+  width: 100vw;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 25em;
+  width: 40em;
+  background-color: #fefeff;
+  box-shadow: 0px 6px 30px -1px rgba(0, 0, 0, 0.6);
+  border-radius: 1.5em;
+  display: flex;
+}
+.resultContainer {
+  background-image: linear-gradient(to top, #332dea, #6441fd);
+  height: 100%;
+  width: 50%;
+  border-radius: 1.5em;
+  overflow: hidden;
+  font-family: "Grotesk";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+.resultContainer h3 {
+  font-weight: 400;
+  color: rgb(204, 204, 204);
+  margin-bottom: 1.5em;
+}
+.finalResultContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 9em;
+  width: 9.5em;
+  border-radius: 5em;
+  background-image: linear-gradient(to top, #4633ed, #4c26d1);
+  margin-bottom: 2em;
+}
+.finalResultContainer h1 {
+  font-weight: 800;
+  color: rgb(240, 240, 240);
+  font-size: 4em;
+  line-height: 1em;
+}
+.finalResultContainer h4 {
+  color: rgb(206, 206, 206);
+  font-weight: 300;
+  font-size: 0.8em;
+}
+.txtContent {
+  color: rgb(206, 206, 206);
+  text-align: center;
+  height: 6em;
+}
+.txtContent h2 {
+  font-weight: 800;
+  margin-bottom: 0.6em;
+}
+.txtContent p {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+.summary {
+  height: 100%;
+  width: 50%;
+  padding: 2em;
+  font-family: "Grotesk";
+}
+.summary h3 {
+  height: 15%;
+}
+.results {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.individualResults {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  height: 2.5em;
+}
+.results p {
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  font-weight: 600;
+}
+.results p:nth-child(1) {
+  background-color: #fff7f6;
+  color: rgb(255, 72, 72);
+}
+.results p:nth-child(2) {
+  background-color: #fffbf2;
+  color: rgb(215, 215, 23);
+}
+.results p:nth-child(3) {
+  background-color: #f6f6fe;
+  color: #75c8ff;
+}
+.results p:nth-child(4) {
+  background-color: #f3f3fd;
+  color: rgb(77, 77, 255);
+}
+.points {
+    font-weight: 300;
+    color: black;
+}
+
+button{
+    width: 100%;
+    height: 15%;
+    background-color: #303B59;
+    color: rgb(225, 225, 225);
+    border: 0;
+    border-radius: 2em;
+    transition: background 300ms;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #5268a4;
+}

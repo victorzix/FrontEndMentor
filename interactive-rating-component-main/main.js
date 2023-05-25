@@ -24,8 +24,5 @@ subBtn.addEventListener('click', (e)=>{
     ratingContainer.style.display = 'none'
     setTimeout(() => {
         resultContainer.style.display = ''
-    }, 200);
-    
-    
-    
+    }, 200);    
 })

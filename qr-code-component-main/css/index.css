@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(220, 15%, 55%);
+}
+
+.container{
+    height: 29em;
+    width: 20em;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.qrCode img{
+    width: 18em;
+    border-radius: 1em;
+
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;  
+    padding: 1em;
+    
+}
+h1{
+    font-size: 1em;
+}
+.textContainer p{
+    color: hsl(220, 15%, 55%);
+    font-size: .85em;
+    width: 17em;
+    align-self: center;
+}
+
+@media(max-width: 375px){
+    .container{
+        height: 25em;
+        width: 16em;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .qrCode img{
+        width: 14.5em;
+        border-radius: 1em;
+
+    }
+    .textContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;  
+        padding: 1em;
+        
+    }
+    h1{
+        font-size: 1em;
+    }
+    .textContainer p{
+        color: hsl(220, 15%, 55%);
+        font-size: .8em;
+    }
+}

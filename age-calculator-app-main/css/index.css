@@ -20,17 +20,88 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
 
 
+
+.container{
+    height: 25em;
+    background-color: white;
+    width: 30em;
+    border-radius: 1em;
+    border-bottom-right-radius: 5em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 1em;
+}
+.inputs{
+    display: flex;
+    width: 100%;
+    gap: 1em;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.input input{
+    width: 7.5em;
+    height: 3.2em;
+    padding: 1em;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: .5em;
+    font-weight: 800;
+    margin: .4em 0 0 0;
+}
+.inputs input::placeholder{
+    font-size: .8em;
+}
+.inputs input:focus{
+    outline: hsl(259, 100%, 65%) solid 1px ;
+}
+.img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img::before{
+    content: "";
+    border: 1px solid gainsboro;
+    width: 39em;
+}
+
+.img img{
+    padding: .6em;
+    width: 3em;
+    border-radius: 4em;
+    background-color: hsl(259, 100%, 65%);
+}
+.inputs label{
+    font-size: .6em;
+    color: hsl(0, 1%, 44%);
+    font-weight: 600;
+}
+.result{
+    font-weight: 900;
+    font-style: italic;
+    color: hsl(259, 100%, 65%);
+    font-size: 3em;
+}
+span:not(.result){
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3em;
+    margin-left: .3em;
+}
+
 @media(max-width: 375px){
     .container{
-        height: 26em;
+        height: 24em;
         background-color: white;
-        width: 17em;
+        width: 17.6em;
         border-radius: 1em;
         border-bottom-right-radius: 5em;
         display: flex;
@@ -89,12 +160,12 @@ input[type=number] {
         font-weight: 900;
         font-style: italic;
         color: hsl(259, 100%, 65%);
-        font-size: 2.5em;
+        font-size: 2em;
     }
     span:not(.result){
         font-weight: 900;
         font-style: italic;
-        font-size: 2em;
+        font-size: 1.8em;
         margin-left: .3em;
     }
 }

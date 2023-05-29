@@ -69,7 +69,8 @@ function checkInput() {
   } else if (monthInput.value > 12 || monthInput.value < 1) {
     monthInput.style.outline = "1px solid red";
     document.getElementById('monthError').innerText = 'Must be a valid month'
-  } else {
+  }
+  else {
     monthInput.style.outline = "";
     document.getElementById('monthError').innerText = ''
     result.innerHTML = `

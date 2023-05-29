@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.header {
+  height: 14em;
+  background-size: 100% auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/illustration-sign-up-mobile.svg);
+  border-radius: 1em;
+  padding: 0;
+}
+.contentWrapper{
+  padding: 1.5em;
+}
+.contentWrapper p{
+  font-size: .8em;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+ul{
+  list-style: none;
+}
+ul li{
+  display: flex;
+  height: 2.5em;
+  align-items: center;
+  font-size: .8em;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+label{
+  font-weight: 700;
+  font-size: .6em;
+  display: block;
+}
+input{
+  margin: .3em;
+  padding: .8em;
+  padding-left: 1em;
+  width: 95%;
+  border-radius: .4em;
+  margin-bottom: 1em;
+  outline: hsl(231, 7%, 60%) 1px solid;
+}
+button{
+  margin: .3em;
+  width: 95%;
+  padding: 1em;
+  border: 0;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: 700;
+  border-radius: .4em;
+}
+.thanksPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40em;
+  padding: 2em 1em;
+}
+.thanksPage img{
+  display: block;
+  width: 4em;
+}
+.thanksPage div{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+@media (max-width: 375px) {
+  body {
+    background-color: white;
+  }
+
+  .header {
+    height: 14em;
+    background-size: 100% auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/illustration-sign-up-mobile.svg);
+    border-radius: 1em;
+    padding: 0;
+  }
+  .contentWrapper{
+    padding: 1.5em;
+  }
+  .contentWrapper p{
+    font-size: .8em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+  ul{
+    list-style: none;
+  }
+  ul li{
+    display: flex;
+    height: 2.5em;
+    align-items: center;
+    font-size: .8em;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+  label{
+    font-weight: 700;
+    font-size: .6em;
+    display: block;
+  }
+  input{
+    margin: .3em;
+    padding: .8em;
+    padding-left: 1em;
+    width: 95%;
+    border-radius: .4em;
+    margin-bottom: 1em;
+    outline: hsl(231, 7%, 60%) 1px solid;
+  }
+  button{
+    margin: .3em;
+    width: 95%;
+    padding: 1em;
+    border: 0;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    border-radius: .4em;
+  }
+  .thanksPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40em;
+    padding: 2em 1em;
+  }
+  .thanksPage img{
+    display: block;
+    width: 4em;
+  }
+  .thanksPage div{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+}

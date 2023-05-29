@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <main class="container" id="container">
+      <div class="emailForm" id="emailForm" >
+        <div class="header" id="header"></div>
+        <div class="contentWrapper" id="contentWrapper">
+          <h1>Stay updated!</h1>
+
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+          <ul>
+            <li>
+              <img src="assets/images/icon-list.svg" /><span>
+                Product discovery and building what matters</span
+              >
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" /><span>
+                Measuring to ensure updates are a success</span
+              >
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" /><span
+                >And much more!</span
+              >
+            </li>
+          </ul>
+
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="email@company.com"
+            id="email"
+          />
+
+          <button onclick="sendEmail()">Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+      <div class="thanksPage" id="thanksPage">
+        <div><img src="assets/images/icon-success.svg" alt="" />        
+          <h1>Thanks for subscribing!</h1>
+          <p class="thanksMessage" id="thanksMessage">
+            
+          </p>
+        </div>
+
+        <button onclick="dismiss()">Dismiss message</button>
+      </div>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>

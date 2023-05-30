@@ -19,7 +19,7 @@
   </head>
   <body>
     <main class="container" id="container">
-      <div class="emailForm" id="emailForm" >
+      <div class="emailForm" id="emailForm">
         <div class="header" id="header"></div>
         <div class="contentWrapper" id="contentWrapper">
           <h1>Stay updated!</h1>
@@ -50,9 +50,10 @@
             name="email"
             placeholder="email@company.com"
             id="email"
+            oninput="enableBtn()"
           />
 
-          <button onclick="sendEmail()">Subscribe to monthly newsletter</button>
+          <button onclick="sendEmail()" id="submitBtn" class="submitBtn">Subscribe to monthly newsletter</button>
         </div>
       </div>
       <div class="thanksPage" id="thanksPage">

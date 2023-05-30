@@ -1,16 +1,15 @@
 let emailInput = document.getElementById("email");
 const validRegex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
 let validEmail = false;
-let thanksPage = document.getElementById("thanksPage");  
+let thanksPage = document.getElementById("thanksPage");
 let formPage = document.getElementById("emailForm");
 
 
 thanksPage.style.display = "none";
-
 function sendEmail() {
   emailInput.style.outline = "hsl(231, 7%, 60%) 1px solid";
   let email = emailInput.value;
-  validate(email);
+  validate(email)
   changePage(email);
 }
 
@@ -26,16 +25,16 @@ function validate(email) {
   }
 }
 
-function changePage(email) {
 
+function changePage(email) {
   if (validEmail) {
     thanksMessage.innerHTML = `A confirmation email has been sent to <b>${email}</b>. Please open it and click the button inside to confirm your subscription`;
     formPage.style.display = "none";
     thanksPage.style.display = "flex";
   }
 }
-function dismiss(){
-    formPage.style.display = 'block'
-    thanksPage.style.display = 'none'
-    emailInput.value = ' '
+function dismiss() {
+  formPage.style.display = "block";
+  thanksPage.style.display = "none";
+  emailInput.value = " ";
 }

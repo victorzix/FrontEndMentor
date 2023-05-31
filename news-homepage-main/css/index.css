@@ -91,11 +91,17 @@ body {
     cursor: pointer;
     font-size: 1em;
     letter-spacing: .3em;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    transition: all ease-in-out 300ms;
+}
 
+.desc button:hover{
+    background-color: #e15245;
 }
 
 .banner img{
     width: 100%;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
 }
 
 .sideMenu{
@@ -156,6 +162,7 @@ body {
 
 .newsContent img{
     width: 6em;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
 }
 
 .newsDesc h3{
@@ -172,4 +179,3 @@ body {
     color: var(--light-blue);
     width: 15em;
 }
-

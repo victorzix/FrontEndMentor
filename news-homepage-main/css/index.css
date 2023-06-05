@@ -30,6 +30,10 @@ body {
   align-items: center;
 }
 
+.menuBtn{
+  display: none;
+}
+
 .headerLinks {
   display: flex;
   gap: 2em;
@@ -225,7 +229,7 @@ body {
     line-height: 1.5em;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   body {
     padding: 1em .3em;
   }
@@ -242,6 +246,10 @@ body {
     display: grid;
     grid-template-columns: 100%;
     gap: 2em;
+  }
+
+  .menuBtn{
+    display: contents;
   }
 
   .banner {

@@ -104,7 +104,7 @@ button:hover{
   flex-direction: column;
   gap: 2em;
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   body {
     background-color: white;
     

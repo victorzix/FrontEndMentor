@@ -25,6 +25,6 @@ for (let content of newMessage) {
         }
     }}, 300)
     
-    qtd.textContent = "0";
+    qtd.textContent = 0;
   }
 }

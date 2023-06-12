@@ -84,6 +84,7 @@ button{
   padding: 1em;
   height: auto;
   border-radius: .8em;
+  transition: all 400ms ease-in-out;
 }
 
 .content img{
@@ -136,4 +137,5 @@ button{
   height: .5em;
   width: .5em;
   border-radius: .5em;
+  transition: all 100ms ease-in-out;
 }

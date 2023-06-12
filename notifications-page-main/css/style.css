@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: 'mainFont';
-  src: url('assets/fonts/PlusJakartaSans-ExtraBold.woff') format(woff);
+  src: url('/notifications-page-main/assets/fonts/PlusJakartaSans-Medium.woff') format(woff);
 }
 
 * {

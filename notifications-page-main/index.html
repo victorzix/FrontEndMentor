@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content= id="content""width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="top">
+        <div class="title">
+          <h2>Notifications</h2>
+          <span class="qtd">  </span>
+        </div>
+
+        <button onclick="readAll()">Mark all as read</button>
+      </div>
+
+      <div class="notifications">
+        <div class="content" id="contentWrapper">
+          <div class="image">
+            <img src="assets/images/avatar-mark-webber.webp" alt="" />
+          </div>
+          <div class="description">
+            <div class="name">
+              <span
+              ><b>Mark Webber</b> reacted to your recent post
+              <b class="post">My first tournament today!</b></span>
+              <div class="unread" id="unread"></div
+            >
+            </div>
+            
+            <span class="time">1m ago</span>
+          </div>
+        </div>
+        <div class="content" id="contentWrapper">
+          <div class="image">
+            <img src="assets/images/avatar-angela-gray.webp" alt="" />
+          </div>
+          <div class="description">
+            <div class="name">
+              <span
+                ><b>Angela Gray</b> followed you </span>
+                <div class="unread" id="unread"></div>
+            </div>
+            <span class="time">5m ago</span>
+          </div>
+        </div>
+        <div class="content" id="contentWrapper">
+          <div class="image">
+            <img src="assets/images/avatar-jacob-thompson.webp" alt="" />
+          </div>
+          <div class="description">
+            <div class="name">
+              <span
+                ><b>Jacob Thompson</b> has joined your group
+                <b class="club">Chess Club</b>
+                </span>
+                <div class="unread" id="unread"></div
+                  >
+            </div>
+            
+            <span class="time"> 1 day ago</span>
+          </div>
+        </div>
+        <div class="content hasMsg"  id="contentWrapper">
+          <div class="imgDesc">
+            <div class="image">
+              <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="" />
+            </div>
+            <div class="description">
+              <div class="name">
+                <span
+                ><b>Rizky Hasanuddin</b> sent you a private
+                message</span
+              > 
+              </div>
+              
+              <span class="time"> 5 days ago</span>
+            </div>
+          </div>
+
+          <div class="message">
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </div>
+        </div>
+        <div class="content" id="contentWrapper">
+          <div class="image">
+            <img src="assets/images/avatar-kimberly-smith.webp" alt="" />
+          </div>
+          <div class="description">
+            <div>
+              <span
+              ><b class="name">Kimberly Smith</b> commented on your
+              picture</span
+            >
+            </div>
+            
+            <span class="time">1 week ago</span>
+          </div>
+        </div>
+        <div class="content" id="contentWrapper">
+          <div class="image">
+            <img src="assets/images/avatar-nathan-peterson.webp" alt="" />
+          </div>
+          <div class="description">
+            <div class="name">
+
+              <span
+                ><b>Nathan Peterson</b> reacted to your recent post 5
+                end-game strategies to increase your win rate</span
+              >
+            </div>
+            <span class="time">2 weeks ago</span>
+          </div>
+        </div>
+        <div class="content" id="contentWrapper">
+          <div class="image">
+            <img src="assets/images/avatar-anna-kim.webp" alt="" />
+          </div>
+          <div class="description">
+            <div class="name">
+              <span
+              ><b>Anna Kim</b> left the group
+              <b class="club">Chess Club</b></span
+            >
+            </div>
+            
+            <span class="time"> 2 weeks ago</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="javascript/index.js"></script>
+  </body>
+</html>

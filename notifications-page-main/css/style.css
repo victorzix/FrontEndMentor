@@ -1,0 +1,139 @@
+:root {
+  --light-blue0: hsl(210, 60%, 98%);
+  --light-blue1: hsl(211, 68%, 94%);
+  --light-blue2: hsl(205, 33%, 90%);
+  --gray-blue: hsl(219, 14%, 63%);
+  --dark-blue0: hsl(219, 12%, 42%);
+  --dark-blue1: hsl(224, 21%, 14%);
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+}
+
+@font-face {
+  font-family: 'mainFont';
+  src: url('assets/fonts/PlusJakartaSans-ExtraBold.woff') format(woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'mainFont';
+}
+
+body {
+  height: 100vh;
+  width: auto;
+  background-color: var(--light-blue1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+    background-color: white;
+    border-radius: 1em;
+    padding: 2em;
+    height: auto;
+    width: 40em;
+}
+
+.top{
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title, h2{
+  display: flex;
+  align-items: center;
+  gap: .6em;
+  font-weight: 600;
+}
+
+.qtd{
+  background-color: var(--blue);
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: .3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  color: var(--dark-blue0);
+  cursor: pointer;
+}
+
+.notifications{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  height: 100%;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  height: auto;
+  border-radius: .8em;
+}
+
+.content img{
+  width: 3em;
+}
+
+.hasMsg{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+}
+
+.imgDesc{
+  display: flex;
+  gap: 1em;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  gap: .3em;
+}
+
+.message{
+  padding: 1em;
+  width: 30em;
+  border: 1px solid var(--light-blue2);
+  align-self: flex-end;
+  border-radius: .4em;
+}
+
+.time{
+  color: var(--gray-blue);
+}
+
+.club{
+  color: var(--blue);
+}
+
+.name{
+  display: flex;
+  align-items: center;
+  gap: .3em;
+}
+
+.unread{
+  background-color: red;
+  height: .5em;
+  width: .5em;
+  border-radius: .5em;
+}

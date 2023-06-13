@@ -1,0 +1,6 @@
+:root{
+    --red: hsl(0, 100%, 66%);
+    --light-violet: hsl(270, 3%, 87%);
+    --dark-violet: hsl(279, 6%, 55%);
+    --dark-violet0: hsl(278, 68%, 11%);
+}

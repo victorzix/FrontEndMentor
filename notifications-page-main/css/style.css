@@ -29,7 +29,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media(max-width: 1440px){
+
 .container{
     background-color: white;
     border-radius: 1em;
@@ -141,7 +141,7 @@ button{
   border-radius: .5em;
   transition: all 100ms ease-in-out;
 }
-}
+
 @media(max-width: 400px){
   body {
     height: 100svh;

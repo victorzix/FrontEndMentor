@@ -11,3 +11,9 @@
   box-sizing: border-box;
   font-family: 'Space Grotesk', sans-serif;
 }
+body {
+  height: 100vh;
+  width: auto;
+  background: url('../images/bg-main-desktop.png') no-repeat, white;
+  background-size: 30% 100%;
+}

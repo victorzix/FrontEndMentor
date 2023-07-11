@@ -148,22 +148,16 @@ button {
   cursor: pointer;
 }
 
-/* <div class="form">
-  <label for="inputName">CARDHOLDER NAME</label>
-  <input type="text" class="inputName" id="inputName" placeholder="e.g. Jane Appleseed">
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-  <label for="inputNumber"></label>
-  <input type="text" class="inputNumber" id="inputNumber" placeholder="e.g. 1234 5678 9123 0000">
-
-  <div class="bottom">
-    <div class="date">
-      <p>EXP. DATE (MM/YY)</p>
-      <div class="inputs">
-        <input type="text" placeholder="MM" class="inputMonth" id="inputMonth">
-        <input type="text" placeholder="YY" class="inputYear" id="inputYear ">
-      </div>
-    </div>
-    <div class="cvc"><input type="text" class="inputSecurity" id="inputSecurity" placeholder="e.g. 123"></div>
-    
-  </div>
-</div> */
+.error{
+  color: var(--red);
+  font-size: .9em;
+  font-variant: small-caps;
+  font-weight: 700;
+  letter-spacing: .2em;
+}

@@ -14,41 +14,41 @@
 <div class="cardWrapper">
   <div class="front">
     <div class="frontTop"><img src="./images/card-logo.svg" alt=""></div>
-    <h2 class="frontNumber" id="frontNumber number">0000 0000 0000 0000</h2>
+    <h2 class="frontNumber" id="frontNumber number"></h2>
     <div class="frontBottom">
       <span class="frontName" id="frontName name"></span>
-      <span class="expire" id="expire">00/00</span>
+      <span class="expire" id="expire"><span class="cardMonth"></span>/<span class="cardYear"></span></span>
     </div>
   </div>
 
 
   <div class="back">
-    <div class="center"><span class="security">000</span></div>
+    <div class="center"><span class="security"></span></div>
   </div>
 </div>
 
 <div class="form">
   <div class="nameForm">
     <label for="inputName">CARDHOLDER NAME</label>
-    <input type="text" class="inputName" id="inputName" placeholder="e.g. Jane Appleseed">
+    <input type="text" class="inputName" id="inputName" placeholder="e.g. Jane Appleseed" maxlength="26">
   </div>
   
   <div class="numberForm">
     <label for="inputNumber">CARD NUMBER</label>
-    <input type="text" class="inputNumber" id="inputNumber" placeholder="e.g. 1234 5678 9123 0000">  
+    <input type="number" class="inputNumber" id="inputNumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">  
   </div>
   
   <div class="bottom">
     <div class="date">
       <label for="inputs">EXP. DATE (MM/YY)</label>
       <div class="inputs">
-        <input type="text" placeholder="MM" class="inputMonth" id="inputMonth">
-        <input type="text" placeholder="YY" class="inputYear" id="inputYear ">
+        <input type="number" placeholder="MM" class="inputMonth" id="inputMonth" maxlength="2">
+        <input type="number" placeholder="YY" class="inputYear" id="inputYear" maxlength="2">
       </div>
     </div>
     <div class="cvcContainer">
       <label for="cvc">CVC</label>
-      <div class="cvc"><input type="text" class="inputSecurity" id="inputSecurity" placeholder="e.g. 123"></div>
+      <div class="cvc"><input type="number" class="inputSecurity" id="inputSecurity" placeholder="e.g. 123" maxlength="4"></div>
     </div>
   </div>
   <button>Confirm</button>
